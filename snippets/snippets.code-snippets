@@ -1,0 +1,640 @@
+{
+  /**
+  * class component
+  */
+  "Create react native class": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ccc",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "import { StyleSheet, View, Text } from 'react-native';",
+      "",
+      "class ${1:Name} extends PureComponent {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<View style={styles.container}>",
+      "\t\t\t\t<Text>$1 Component$0</Text>",
+      "\t\t\t</View>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1,",
+      "\t\tbackgroundColor: 'steelblue',",
+      "\t\tjustifyContent: 'center',",
+      "\t\talignItems: 'center'",
+      "\t}",
+      "});",
+      "",
+      "export default $1;",
+      ""
+    ],
+    "description": "create class react native"
+  },
+  /**
+  * class container
+  */
+  "Create class container": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cct",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "import { connect } from 'react-redux';",
+      "import $1Component from '../../screens/$0$1';",
+      "",
+      "class ${1: NameClass} extends PureComponent {",
+      "\trender() {",
+      "\t\treturn <${1: NameClass}Component {...this.props} />;",
+      "\t}",
+      "}",
+      "",
+      "const mapDispatchToProps = {",
+      "\t",
+      "};",
+      "",
+      "const mapStateToProps = (state) => {",
+      "\treturn {",
+      "\t\tlanguage: state.config.language",
+      "\t};",
+      "};",
+      "",
+      "export default connect(mapStateToProps, mapDispatchToProps)(${1: NameClass});",
+      ""
+    ],
+    "description": "create class container"
+  },
+  /**
+  * class component with PropTypes
+  */
+  "Create component PropTypes": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ppp",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "import PropTypes from 'prop-types';",
+      "import { StyleSheet, View, Text } from 'react-native';",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1",
+      "\t}",
+      "});",
+      "",
+      "class ${1:Name} extends PureComponent {",
+      "\trender() {",
+      "\t\tconst {",
+      "\t\t\t$0",
+      "\t\t} = this.props;",
+      "\t\treturn (",
+      "\t\t\t<View style={styles.container}>",
+      "\t\t\t\t<Text>$1 Component</Text>",
+      "\t\t\t</View>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "$1.defaultProps = {",
+      "\t",
+      "}",
+      "",
+      "$1.propTypes = {",
+      "\t",
+      "}",
+      "",
+      "export default $1;",
+      ""
+    ],
+    "description": "create component PropTypes"
+  },
+  /**
+  * class component with Typescript
+  */
+  "Create component PropTypes and Typescript": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "pppp",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "import { StyleSheet, View, Text, ViewStyle, TextStyle } from 'react-native';",
+      "",
+      "class ${1:Name} extends PureComponent<Props> {",
+      "\trender() {",
+      "\t\tconst {",
+      "\t\t\t$0",
+      "\t\t} = this.props;",
+      "\t\treturn (",
+      "\t\t\t<View style={styles.container}>",
+      "\t\t\t\t<Text>$1 Component</Text>",
+      "\t\t\t</View>",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "\t\tflex: 1",
+      "\t}",
+      "});",
+      "",
+      "$1.defaultProps = {",
+      "\t",
+      "}",
+      "",
+      "interface Props {",
+      "\t",
+      "}",
+      "",
+      "export default $1;",
+      ""
+    ],
+    "description": "create component PropTypes and Typescript"
+  },
+  /**
+  * component
+  */
+  "componentWillMount": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cwm",
+    "body": [
+      "componentWillMount() {",
+      "\t$0",
+      "}"
+    ],
+    "description": "componentWillMount"
+  },
+  "componentDidMount": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cdm",
+    "body": [
+      "componentDidMount() {",
+      "\t$0",
+      "}"
+    ],
+    "description": "componentDidMount"
+  },
+  "componentWillReceiveProps": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cwrp",
+    "body": [
+      "componentWillReceiveProps(nextProps) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "componentWillReceiveProps"
+  },
+  "componentWillUnmount": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cwum",
+    "body": [
+      "componentWillUnmount() {",
+      "\t$0",
+      "}"
+    ],
+    "description": "componentWillUnmount"
+  },
+  "shouldComponentUpdate": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "scud",
+    "body": [
+      "shouldComponentUpdate() {",
+      "\t$0",
+      "}"
+    ],
+    "description": "shouldComponentUpdate"
+  },
+  /**
+  * contructor
+  */
+  "constructor": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ctt",
+    "body": [
+      "constructor(props) {",
+      "\tsuper(props);",
+      "\tthis.state = {",
+      "\t\t${1:state}: ${2:value}$0",
+      "\t}",
+      "}"
+    ],
+    "description": "constructor"
+  },
+  /**
+  * set state
+  */
+  "setState": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ss",
+    "body": [
+      "this.setState({",
+      "\t$1: $2$0",
+      "});"
+    ],
+    "description": "setState"
+  },
+  /**
+  * export types action
+  */
+  "export types action": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ttt",
+    "body": [
+      "export const $1 = '$1';",
+      "export const $1_SUCCESS = '$1_SUCCESS';",
+      "export const $1_FAILED = '$1_FAILED';",
+      "$0"
+    ],
+    "description": "export types action"
+  },
+  /**
+  * create action
+  */
+  "create action": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "aaa",
+    "body": [
+      "export const $1 = (data) => {",
+      "\treturn {",
+      "\t\ttype: types.$2,",
+      "\t\tpayload: data",
+      "\t};",
+      "};",
+      "",
+      "export const $1Success = (data) => {",
+      "\treturn {",
+      "\t\ttype: types.$2_SUCCESS,",
+      "\t\tpayload: data",
+      "\t};",
+      "};",
+      "",
+      "export const $1Failed = () => {",
+      "\treturn {",
+      "\t\ttype: types.$2_FAILED",
+      "\t};",
+      "};",
+      "$0"
+    ],
+    "description": "create action"
+  },
+  /**
+  * create saga middleware
+  */
+  "create saga middleware": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "sss",
+    "body": [
+      "/**",
+      "* $0",
+      "*/",
+      "function* saga$1() {",
+      "\ttry {",
+      "",
+      "\t} catch(error) {",
+      "\t console.log('Catch $1', error);",
+      "\t}",
+      "}",
+      "",
+      "export function* watch$1() {",
+      "\tyield takeLatest(types.$2, saga$1);",
+      "}",
+      ""
+    ],
+    "description": "create saga middleware"
+  },
+  /**
+  * console.log
+  */
+  "console log": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "lll",
+    "body": [
+      "console.log('$1', $2);$0"
+    ],
+    "description": "console log"
+  },
+  /**
+  * console.log
+  */
+  "Print to console": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": [
+      "cl",
+      "co",
+      "con",
+      "cons",
+      "conso",
+      "consol",
+      "console",
+      "console.l",
+      "console.lo",
+      "console.log"
+    ],
+    "body": [
+      "console.log('$1', $2);$0"
+    ],
+    "description": "console log"
+  },
+  /**
+  * export variable
+  */
+  "export variable": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "exp",
+    "body": [
+      "export const ${1:name} = ${2:value};$0"
+    ],
+    "description": "export variable"
+  },
+  /**
+  * import module
+  */
+  "import module": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ii",
+    "body": [
+      "import ${1:name} from '${2:path}';$0"
+    ],
+    "description": "import module"
+  },
+  /**
+  * import module 2
+  */
+  "import module 2": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "iii",
+    "body": [
+      "import { ${1:name} } from '${2:path}';$0"
+    ],
+    "description": "import module 2"
+  },
+  /**
+  * import types action
+  */
+  "import types action": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "iat",
+    "body": [
+      "import * as types from '../types';$0"
+    ],
+    "description": "import types action"
+  },
+  /**
+  * import * as
+  */
+  "import common color": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "icc",
+    "body": [
+      "import * as common from '$1';$0"
+    ],
+    "description": "import * as"
+  },
+  /**
+  * import image
+  */
+  "import image": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "imm",
+    "body": [
+      "import * as imgs from '$1';$0"
+    ],
+    "description": "import image"
+  },
+  /**
+  * mapStateToProps and mapDispatchToProps
+  */
+  "mapStateToProps mapDispathToProps": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "mmm",
+    "body": [
+      "const mapDispatchToProps = {",
+      "\t$1",
+      "};",
+      "",
+      "const mapStateToProps = (state$0) => {",
+      "\treturn {",
+      "\t\t$2",
+      "\t};",
+      "};",
+    ],
+    "description": "mapStateToProps mapDispatchToProps"
+  },
+  /**
+  * Add style shadow
+  */
+  "Shadow view": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "sha",
+    "body": [
+      "shadowColor: \"#000\",",
+      "shadowOffset: {",
+      "\twidth: 0,",
+      "\theight: 2,",
+      "},",
+      "shadowOpacity: 0.25,",
+      "shadowRadius: 3.84,",
+      "elevation: 5$0"
+    ],
+    "description": "Shadow style"
+  },
+  /**
+  * const { } = this.state;
+  */
+  "This state": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "tss",
+    "body": [
+      "const { $0 } = this.state;"
+    ],
+    "description": "const { } = this.state;"
+  },
+  /**
+  * keyExtractor
+  */
+  "keyExtractor": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "kkk",
+    "body": [
+      "keyExtractor={(item, index) => `index_${$index}`}",
+      "$1"
+    ],
+    "description": "keyExtractor"
+  },
+  /**
+  * keyExtractor item
+  */
+  "keyExtractor item": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "kkkk",
+    "body": [
+      "keyExtractor={item => `index_${item.$1}`}",
+      "$0"
+    ],
+    "description": "keyExtractor item"
+  },
+  /**
+  * const { } = this.props;
+  */
+  "This props": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "tpp",
+    "body": [
+      "const { $0 } = this.props;"
+    ],
+    "description": "const { } = this.props;"
+  },
+  /**
+  * Create ref function
+  */
+  "Ref function": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "rrr",
+    "body": [
+      "createRef$1$0 = (ref) => {",
+      "\tthis.ref$1 = ref;",
+      "}"
+    ],
+    "description": "createRefActionSheet = (ref) => this.refActionSheet = ref;"
+  },
+  /**
+  * Create ref function
+  */
+  "Create arrow function": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "cft",
+    "body": [
+      "const $1 = () => {",
+      "\t",
+      "};$0"
+    ],
+    "description": "Create a new function"
+  },
+  /**
+  * Create function component
+  */
+  "Create function": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "fff",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text, StyleSheet } from 'react-native';",
+      "import equals from 'react-fast-compare';",
+      "",
+      "interface $1Props {",
+      "",
+      "}",
+      "",
+      "$1.defaultProps = {",
+      "",
+      "};",
+      "",
+      "function $1(props?: $1Props) {",
+      "\tconst {$0} = props;",
+      "\treturn (",
+      "\t\t<View style={styles.container}>",
+      "\t\t\t<Text>$1</Text>",
+      "\t\t</View>",
+      "\t);",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "",
+      "\t},",
+      "});",
+      "",
+      "export default React.memo($1, equals);",
+      "",
+    ],
+    "description": "Create function component"
+  },
+  /**
+  * Create function component
+  */
+  "Create function component": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "ffff",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text, StyleSheet } from 'react-native';",
+      "import equals from 'react-fast-compare';",
+      "",
+      "function $1(props) {",
+      "\tconst {$0} = props;",
+      "\treturn (",
+      "\t\t<View style={styles.container}>",
+      "\t\t\t<Text>$1</Text>",
+      "\t\t</View>",
+      "\t);",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "\tcontainer: {",
+      "",
+      "\t},",
+      "});",
+      "",
+      "export default React.memo($1, equals);",
+      "",
+    ],
+    "description": "Create function component"
+  },
+  /**
+  * Console.log
+  */
+  "Console.log": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "_console",
+    "body": [
+      "_console.log($0);",
+    ],
+    "description": "Console.log"
+  },
+  /**
+  * useShareValue
+  */
+  "Reanimated useSharedValue": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useSharedValue",
+    "body": [
+      "useSharedValue($0)",
+    ],
+    "description": "Reanimated useSharedValue"
+  },
+  /**
+  * useAnimatedStyle
+  */
+  "Reanimated useAnimatedStyle": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "useAnimatedStyle",
+    "body": [
+      "useAnimatedStyle(() => {",
+      "\treturn {",
+      "\t\t",
+      "\t};",
+      "});"
+    ],
+    "description": "Reanimated useAnimatedStyle"
+  },
+  /**
+  * onGestureEvent
+  */
+  "Reanimated onGestureEvent": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "onGestureEvent",
+    "body": [
+      "onGestureEvent = useAnimatedGestureHandler({",
+      "\tonStart: (_, ctx) => {",
+      "\t\t",
+      "\t},",
+      "\tonActive: (event, ctx) => {",
+      "\t\t",
+      "\t},",
+      "\tonFinish: () => {",
+      "\t\t",
+      "\t},",
+      "});"
+    ],
+    "description": "Reanimated onGestureEvent"
+  },
+}

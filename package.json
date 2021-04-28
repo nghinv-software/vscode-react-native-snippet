@@ -1,0 +1,42 @@
+{
+    "name": "nghinv-rnsnippet",
+    "displayName": "React Native Snippet",
+    "description": "This is a snippet for react native",
+    "version": "1.0.0",
+    "homepage": "https://github.com/nghinv-software/vscode-react-native-snippet/README.md",
+    "bugs": {
+        "url": "https://github.com/nghinv-software/vscode-react-native-snippet/issues",
+        "email": "nghinv@lumi.biz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nghinv-software/vscode-react-native-snippet"
+    },
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "icon": "icon.png",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
