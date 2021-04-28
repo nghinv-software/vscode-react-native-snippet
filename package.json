@@ -2,7 +2,7 @@
     "name": "nghinv-rnsnippet",
     "displayName": "React Native Snippet",
     "description": "This is a snippet for react native",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "homepage": "https://github.com/nghinv-software/vscode-react-native-snippet/README.md",
     "bugs": {
         "url": "https://github.com/nghinv-software/vscode-react-native-snippet/issues",
@@ -12,8 +12,9 @@
         "type": "git",
         "url": "https://github.com/nghinv-software/vscode-react-native-snippet"
     },
+    "publisher": "nghinv",
     "engines": {
-        "vscode": "^1.55.0"
+        "vscode": "^1.52.0"
     },
     "categories": [
         "Snippets"
