@@ -1,14 +1,15 @@
 # React Native Snippet
 
-This is a snippet for react native
+A snippet for react native
 
-![Gif](https://i.imgur.com/FRvLcR5.gif)
+<!-- ![Gif](https://i.imgur.com/FRvLcR5.gif) -->
+![Gif](images/demo.gif)
 
 ## Shortcuts / Commands
 
 ### Main Commands
 
-| **Command** | **Snippet** |
+| **Trigger** | **Content** |
 |:-----------:| -------------- |
 | ccc       | Create class react native |
 | cct       | Create class container |
@@ -35,7 +36,7 @@ This is a snippet for react native
 | kkk       | keyExtractor |
 | kkkk       | keyExtractor |
 | tpp       | const { } = this.props; |
-| rrr       | createRefActionSheet = (ref) => this.refActionSheet = ref; |
+| rrr       | createRef = (ref) => this.createRef = ref; |
 | cft       | Create function component|
 | fff       | Create function component |
 | ffff       | Create function component |
@@ -52,6 +53,14 @@ This is a snippet for react native
 | 🐛  | Bugfix      |
 
 ## Release Notes
+
+### [1.0.2]
+
+Update document
+
+### [1.0.1]
+
+Edit visual code version support to 1.52.0
 
 ### [1.0.0]
 
